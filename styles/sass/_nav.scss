@@ -1,0 +1,30 @@
+.headerFlex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-top: 10px;
+}
+nav {
+    width: 40%;
+    ul {
+        display: flex;
+        justify-content: space-evenly;
+        
+        li {
+            list-style-type: none;
+            a {
+                color: black;
+                text-decoration: none;
+                text-transform: uppercase;
+
+                // add hover to a:focus, a:hover pseudo object after
+                &:hover,
+                &:focus {
+                    text-decoration: underline solid lightblue;
+                }
+            }
+
+            
+        }
+    }    
+}

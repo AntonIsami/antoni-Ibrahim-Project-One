@@ -10,3 +10,19 @@
 
 @import "normalize";
 @import "nav";
+@import "typography";
+@import "home";
+
+
+//homepage styling
+.wrapper {
+    width: 90%;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+.header {
+    height: 95vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    
+}
