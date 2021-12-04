@@ -3,10 +3,25 @@
 
 //Heading (Textiles for all..)
 // Pacifico regular 58px, Line height 68px
-
+h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 58px;
+    line-height: 68px;
+    font-weight: normal;
+    color: #1A315C;
+}
 // Headings (Learn new.., Upcoming.., Communi.., Blog..)
 // Pacifico regular 43px, line height 58px, line spacing 2.7px
 
+h2 {
+    font-family: 'Pacifico', cursive;
+    font-size: 43px;
+    line-height: 58px;
+    font-weight: normal;
+    letter-spacing: 2.7px;
+    color: #1A315C;
+    
+}
 // Headings (Comments)
 // PAcifico regular 40px, letter spacing 4.3px
 
@@ -27,7 +42,20 @@
     letter-spacing: 1.7px;
 }
 // buttons 
-// Pacifico regular 27px, center align, line height 32px, letter spacign 1.4px
+// Pacifico regular 27px, center align, line height 32px, letter spacing 1.4px
+button {
+    font-family: 'Pacifico', cursive;
+    font-size: 27px;
+    font-weight: normal;
+    line-height: 32px;
+    letter-spacing: 1.4px;
+    text-align: center;
+    background-color: #1A315C;
+    color: white;
+    border: none;
+    padding: 6px 35px 10px 35px;
+    text-align: center;
+}
 
 // Nav 
 // Lato bold 20px, center align, line height 29px, letter spacing 1.4px
@@ -42,3 +70,10 @@ nav {
 
 // body 
 // Lato regular 20px, line height 28px, letter spacing 2px
+p {
+    font-family: 'Lato', sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 29px;
+    letter-spacing: 2px;
+}
