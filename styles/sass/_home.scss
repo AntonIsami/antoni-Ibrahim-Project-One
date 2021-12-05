@@ -30,10 +30,13 @@ header h1 {
 .learnText h2 {
     margin-bottom: 10px;
     margin-top: 70px;
+    color: #1A315C;
 }
 .learnText p {
     padding-bottom: 20px;
+    color: black;
 }
+
 .learnImgDiv {
     width: 35%;
 }
@@ -43,13 +46,175 @@ header h1 {
     margin-top: 70px;
 }
 .gallerySection {
-    background: #1A315C;
+    background: rgb(25,64,80);
 }
 .galleryFlex {
     display: flex;
     padding: 80px 0;
+
 }
 .galleryImg{
-    width: calc(33%-30px);
-    margin-right: 30px;
+    width: calc(33%);
+    padding-right: 40px;
+}
+.galleryImg:last-of-type {
+    padding-right: 0px;
+}
+.galleryImg img {
+    width: 100%;
+}
+.activitiesSection {
+    background: #CCEDFB;
+}
+.activitiesFlex {
+    display: flex;
+    
+}
+.activitiesFlex:nth-of-type(1) {
+    padding: 80px 0 20px 0;
+}
+.activitiesFlex:nth-of-type(2) {
+    padding: 0px 0 80px 0;
+}
+
+.activity {
+    display: flex;
+    width: 50%;
+    padding-right: 30px;
+}
+.activity:nth-of-type(evens) {
+    padding-right: 0px;
+}
+.activityText {
+    margin-left: 20px;
+}
+.activity i {
+    font-size: 30px;
+    background: #0CADC0;
+    border-radius: 50%;
+    min-width: 55px;
+    height: 55px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 55px;
+    margin-top: 5px;
+}
+.activity h2 {
+   margin-top: 0px; 
+     
+}
+.locationsSection {
+    background: rgb(25,64,80);
+}
+.locationsSection p, h3 {
+    color: white;
+    
+}
+.locationsFlexTop {
+    padding-top: 40px;
+    margin-bottom: 20px;
+}
+.locationsFlexBottom {
+    padding-bottom: 40px;
+}
+.marketFlex {
+    display: flex;
+    position: relative;
+    
+}
+.locationImgLeft, 
+.locationImgRight {
+    position: absolute;
+}
+.locationImgLeft {
+    top: -75px;
+    left: -150px;
+    width: 55%;
+}
+.locationImgRight {
+    top: 60px;
+    right: -150px;
+    width: 53%;
+}
+.marketText h2 {
+    margin-bottom: 10px;
+}
+.marketText p {
+    margin-top: 0px;
+}
+.marketTextRight {
+    position: relative;
+    width: 45%;
+    left: 60%;
+}
+.marketTextLeft {
+    position: relative;
+    width: 45%;
+    text-align: right;
+    margin-top: 50px;
+    padding-bottom: 50px;
+    right: 3%;
+}
+.yarnBanner {
+    background: url("../assets/textilee-assets/banner.jpg") center;
+    height: 50vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.styleSearch {
+    padding: 125px 0;
+    background: #CCEDFB;
+}
+.styleText {
+    text-align: center;
+}
+.styleText p {
+    color: black;
+    margin-top: 15px;
+}
+.styleText h2 {
+    margin-bottom: 0px;
+}
+@media (max-width: 900px) {
+    .learnFlex {
+        flex-direction: column-reverse;
+        padding-top: 10px;
+    }
+    .learnImgDiv {
+        width: 100%;
+    }
+    .learnImg {
+        margin-left: 10%;
+    }
+    .learnText {
+        width: 100%;
+        text-align: center;
+    }
+    .activity {
+        padding-right: 30px;
+    }
+    .marketFlex {
+        flex-direction: column;
+    }
+    .marketFlexBottom {
+        flex-direction: column-reverse;
+    }
+    .locationImgLeft, .locationImgLeft {
+        position: relative;
+        width: 100%;
+    }
+    .locationImgLeft {
+        top: 0px;
+        left: 0px;
+    }
+    .marketText {
+        text-align: center;
+    }
+    .marketTextLeft, .marketTextRight {
+        width: 100%;
+        text-align: center;
+    }
+    .marketTextRight {
+        left: 0;
+    }
 }

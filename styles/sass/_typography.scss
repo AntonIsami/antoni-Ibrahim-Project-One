@@ -19,7 +19,8 @@ h2 {
     line-height: 58px;
     font-weight: normal;
     letter-spacing: 2.7px;
-    color: #1A315C;
+    color: #1A315C; 
+    
     
 }
 // Headings (Comments)
@@ -28,6 +29,14 @@ h2 {
 // Headings (Discover.., New locat..)
 // Pacifico regular 40px, align right, line height 58px, letter spacing 2.5px
 
+h3 {
+    font-family: 'Pacifico', cursive;
+    font-size: 40px;
+    font-weight: normal;
+    text-align: right;
+    line-height: 58px;
+    letter-spacing:  2.5px;
+}
 // Headings (Our missions, Recent Pos..)
 // Pacifico regular 35px, letter spacing 2.9px
 
@@ -62,7 +71,7 @@ button {
 nav {
     font-family: 'Lato', sans-serif;
     font-size: 20px;
-    font-weight: bold;
+    font-weight: 700;
     text-align: center;
     line-height: 29px;
     letter-spacing: 1.4px;
@@ -72,7 +81,7 @@ nav {
 // Lato regular 20px, line height 28px, letter spacing 2px
 p {
     font-family: 'Lato', sans-serif;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 20px;
     line-height: 29px;
     letter-spacing: 2px;
