@@ -4,6 +4,7 @@
     align-items: flex-end;
     padding-top: 10px;
 }
+
 nav {
     width: 40%;
     ul {
@@ -28,4 +29,31 @@ nav {
             
         }
     }    
+}
+.fa-bars{
+    visibility: hidden;
+    color: black;
+}
+@media (max-width: 1000px) {
+    .headerFlex {
+        align-items: center;
+    }
+}
+@media (max-width: 450px) {
+     nav ul {
+        visibility: hidden;
+    }
+    .fa-bars {
+        visibility: visible;
+        position: absolute;
+        top: 35px;
+        right: 25px;
+        font-size: 35px;
+        transform: scale(1.7,1);
+        
+        
+    }
+    .header {
+
+    }
 }

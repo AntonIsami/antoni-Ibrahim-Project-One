@@ -14,6 +14,7 @@ header h1 {
     top: 50px;
     width: 60%;
 }
+
 .learnSection {
     background: #CCEDFB;
 }
@@ -38,12 +39,36 @@ header h1 {
 }
 
 .learnImgDiv {
-    width: 35%;
+    width: 25%;
+    margin-top: 7%;
+    position: relative;
+    
 }
+.learnImgDiv::before {
+    content: '';
+    background: #0CADC0;
+    height: 100%;
+    width: 100%;
+    display: block;
+    position: absolute;
+    right: 5%;
+    top: 5%;
+}
+// .learnImgDiv::after {
+//     content: '';
+//     background: #0CADC0;
+//     height: 18px;
+//     width: 90%;
+//     display: block;
+//     position: absolute;
+    
+//     top: 100%;
+// }
 .learnImg {
-    width: 80%;
-    margin-left: 20%;
-    margin-top: 70px;
+    max-width: 100%;
+    position: relative;
+    z-index: 1;
+    display: block;
 }
 .gallerySection {
     background: rgb(25,64,80);
@@ -55,10 +80,11 @@ header h1 {
 }
 .galleryImg{
     width: calc(33%);
-    padding-right: 40px;
+    padding-right: 20px;
 }
 .galleryImg:last-of-type {
     padding-right: 0px;
+    width: calc(33% - 20px)
 }
 .galleryImg img {
     width: 100%;
@@ -111,7 +137,7 @@ header h1 {
     
 }
 .locationsFlexTop {
-    padding-top: 40px;
+    padding-top: 20px;
     margin-bottom: 20px;
 }
 .locationsFlexBottom {
@@ -127,17 +153,32 @@ header h1 {
     position: absolute;
 }
 .locationImgLeft {
-    top: -75px;
-    left: -150px;
+    margin-top: 10px;
+    bottom: 2%;
+    right: 58%;
     width: 55%;
 }
 .locationImgRight {
-    top: 60px;
-    right: -150px;
+    top: 10%;
+    left: 60%;
     width: 53%;
 }
+
+// .locationImgLeft::before {
+//     content: '';
+//     background: #0CADC0;
+//     height: 100%;
+//     width: 100%;
+//     display: block;
+//     position: absolute;
+//     left: 5%;
+//     top: 5%;
+// }
 .marketText h2 {
     margin-bottom: 10px;
+}
+.marketText h3 {
+    margin: 10px 0;
 }
 .marketText p {
     margin-top: 0px;
@@ -146,6 +187,9 @@ header h1 {
     position: relative;
     width: 45%;
     left: 60%;
+}
+.marketTextRight h3 {
+    text-align: left;
 }
 .marketTextLeft {
     position: relative;
@@ -157,7 +201,7 @@ header h1 {
 }
 .yarnBanner {
     background: url("../assets/textilee-assets/banner.jpg") center;
-    height: 50vh;
+    height: 60vh;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -175,7 +219,10 @@ header h1 {
 .styleText h2 {
     margin-bottom: 0px;
 }
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
+    .threadsImg {
+        top: 130px;
+    }
     .learnFlex {
         flex-direction: column-reverse;
         padding-top: 10px;
@@ -184,11 +231,19 @@ header h1 {
         width: 100%;
     }
     .learnImg {
-        margin-left: 10%;
+        margin-left: 25%;
+        width: 50%;
+        margin-top: 100px;
+    }
+    .learnImgDiv::before {
+        visibility: hidden;
     }
     .learnText {
         width: 100%;
         text-align: center;
+    }
+    .learnText h2 {
+        margin-top: 20px;
     }
     .activity {
         padding-right: 30px;
@@ -199,13 +254,18 @@ header h1 {
     .marketFlexBottom {
         flex-direction: column-reverse;
     }
-    .locationImgLeft, .locationImgLeft {
+    .locationImgLeft, .locationImgRight {
         position: relative;
         width: 100%;
     }
     .locationImgLeft {
         top: 0px;
         left: 0px;
+    }
+    .locationImgRight {
+        right: 0;
+        left: 0;
+        top: 15px;
     }
     .marketText {
         text-align: center;
@@ -217,4 +277,39 @@ header h1 {
     .marketTextRight {
         left: 0;
     }
+    .marketTextRight h3 {
+    text-align: center;
+    }
+    .marketTextLeft {
+        right: 0;
+        margin-top: 10px;
+    }
+    .styleSearch {
+        padding: 25px 0;
+    }
+    .styleText h2 {
+        margin-top: 0;
+    }
+}
+@media (max-width: 700px) {
+    .activitiesFlex {
+        flex-direction: column;
+    }
+    .activity {
+        width: 100%;
+    }
+}
+@media (max-width: 450px) {
+   .threadsImg {
+       top: 275px;
+   }
+   
+   .headerHome {
+       background-size: cover;
+       background-position-x: -750px;
+   }
+   .galleryImg {
+       padding-right: 10px;
+   }
+
 }
