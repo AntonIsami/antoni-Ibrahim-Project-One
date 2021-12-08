@@ -2,10 +2,7 @@
     background: url(../assets/textilee-assets/header-home.jpg) center;
     background-size: cover;
 }
-header h1 {
-    width: 50%;
-    
-}
+// first section
 .threadsDiv {
     position: relative;
 }
@@ -70,6 +67,7 @@ header h1 {
     z-index: 1;
     display: block;
 }
+// Second section (gallery)
 .gallerySection {
     background: rgb(25,64,80);
 }
@@ -89,6 +87,7 @@ header h1 {
 .galleryImg img {
     width: 100%;
 }
+// third section company activities
 .activitiesSection {
     background: #CCEDFB;
 }
@@ -129,6 +128,7 @@ header h1 {
    margin-top: 0px; 
      
 }
+// fourth section new locations and market
 .locationsSection {
     background: rgb(25,64,80);
 }
@@ -146,7 +146,6 @@ header h1 {
 .marketFlex {
     display: flex;
     position: relative;
-    
 }
 .locationImgLeft, 
 .locationImgRight {
@@ -157,11 +156,13 @@ header h1 {
     bottom: 2%;
     right: 58%;
     width: 55%;
+    box-shadow: 20px 20px #0CADC0;
 }
 .locationImgRight {
     top: 10%;
     left: 60%;
     width: 53%;
+    box-shadow: -20px 20px #0CADC0;
 }
 
 // .locationImgLeft::before {
@@ -183,6 +184,10 @@ header h1 {
 .marketText p {
     margin-top: 0px;
 }
+.marketText button {
+    color: #1A315C; 
+    background: #CCEDFB;
+}
 .marketTextRight {
     position: relative;
     width: 45%;
@@ -199,12 +204,14 @@ header h1 {
     padding-bottom: 50px;
     right: 3%;
 }
+// yarn banner div
 .yarnBanner {
     background: url("../assets/textilee-assets/banner.jpg") center;
     height: 60vh;
     background-size: cover;
     background-repeat: no-repeat;
 }
+// fourth section style search 
 .styleSearch {
     padding: 125px 0;
     background: #CCEDFB;
@@ -257,6 +264,7 @@ header h1 {
     .locationImgLeft, .locationImgRight {
         position: relative;
         width: 100%;
+        box-shadow: none;
     }
     .locationImgLeft {
         top: 0px;
@@ -301,7 +309,7 @@ header h1 {
 }
 @media (max-width: 450px) {
    .threadsImg {
-       top: 275px;
+       display: none;
    }
    
    .headerHome {
@@ -310,6 +318,10 @@ header h1 {
    }
    .galleryImg {
        padding-right: 10px;
+       width: 50%;
+   }
+   .galleryImg:last-of-type {
+       display: none;
    }
 
 }

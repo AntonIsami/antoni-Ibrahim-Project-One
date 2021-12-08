@@ -1,7 +1,7 @@
 .headerFlex {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: baseline;
     padding-top: 10px;
 }
 
@@ -10,7 +10,7 @@ nav {
     ul {
         display: flex;
         justify-content: space-evenly;
-        
+        margin: 0;
         li {
             list-style-type: none;
             a {
@@ -53,7 +53,5 @@ nav {
         
         
     }
-    .header {
-
-    }
+    
 }

@@ -8,17 +8,30 @@
 // Third blue rgb(25,64,80)
 
 //
+//variables
+$darkslateblue: #1A315C;
+$black: #1E1713;
+$turquoiseblue: #0CADC0;
+$blacktwo: #161515;
+$white: #ffffff;
+$thirdblue: rgb(25,64,80);
+
+
 
 @import "normalize";
 @import "nav";
 @import "typography";
 @import "home";
+@import "blog";
 
 html {
     font-size: 125%;
 }
 
-//homepage styling
+//common element styling
+header h1 {
+    width: 50%;
+}
 .wrapper {
     width: 80%;
     max-width: 1300px;
