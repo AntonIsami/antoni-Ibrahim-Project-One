@@ -1,0 +1,91 @@
+.headerContact {
+    background: url("../assets/textilee-assets/contact-header.jpg") center;
+    background-size: cover;
+    height: 70vh;
+}
+.headerContact h1 {
+    padding-top: 80px;
+}
+
+.formInfo {
+    background: $lightskyblue;
+    display: flex;
+    justify-content: space-around;
+    padding: 100px 40px;
+}
+.contactForm {
+    background: $thirdblue;
+    width: 60%;
+    padding: 60px 60px;
+    margin-top: -250px;
+    box-shadow: 18px 18px $turquoiseblue;
+}
+.info {
+    width: 20%;
+    margin-top: 5%;
+}
+.contactForm input:first-of-type {
+    margin-right: 10%;
+    
+}
+.contactForm input:nth-of-type(3) {
+    width: 100%;
+    border: 2px solid $turquoiseblue;
+    border-radius: 1%;
+    padding-bottom: 200px;
+    
+}
+.contactInput {
+    color: $white;
+    background: $thirdblue;
+    width: calc(45% - 3px);
+    border-top: 1px solid $thirdblue;
+    border-right: 1px solid $thirdblue;
+    border-left: 1px solid $thirdblue;
+    border-bottom: 2px solid $turquoiseblue;
+    padding: 30px 10px 20px 30px;
+    margin-bottom: 60px;
+}
+.contactForm button {
+    width: 100%;
+    background: $lightskyblue;
+    color: $darkslateblue
+}
+.symbols {
+    display: flex;
+    margin-bottom: 20px;
+}
+.symbols i {
+    margin-right: 35px;
+}
+.info p:first-of-type {
+    margin-bottom: 20px;
+}
+@media (max-width: 750px) {
+    .formInfo {
+        flex-direction: column;
+    }
+    .info {
+        width: 100%;
+        margin-top: 10%;
+        text-align: center;
+    }
+    .symbols {
+        justify-content: center;
+        margin-left: 25px;
+    }
+    .symbols i {
+        
+    }
+    .contactForm {
+        width: 100%;
+    }
+    .contactInput {
+        font-size: 14px;
+    }
+}
+@media (max-width: 450px) {
+    .headerContact h1 {
+        width: 60%;
+    }
+}

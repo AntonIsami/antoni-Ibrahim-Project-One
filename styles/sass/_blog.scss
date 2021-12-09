@@ -37,12 +37,14 @@
 .blogText h3 {
     text-align: left;
 }
+
 .blogText p {
     color: white;
     padding: 20px 0;
 }
 .blogText p:first-of-type {
     color: $lightskyblue;
+    padding-top: 10px;
 }
 
 .topText {

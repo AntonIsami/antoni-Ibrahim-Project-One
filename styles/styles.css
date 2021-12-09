@@ -241,10 +241,10 @@ nav ul li {
   list-style-type: none;
 }
 nav ul li a {
-  color: black;
+  color: #1A315C;
   text-decoration: none;
   text-transform: uppercase;
-  margin-right: 10px;
+  margin-right: 30px;
   position: relative;
 }
 nav ul li a:hover:after, nav ul li a:focus:after {
@@ -831,6 +831,7 @@ p, .missionText ul {
 
 .blogText p:first-of-type {
   color: #CCEDFB;
+  padding-top: 10px;
 }
 
 .topText {
@@ -1033,6 +1034,118 @@ aside {
 
   .commentForm input {
     font-size: 14px;
+  }
+}
+.headerContact {
+  background: url("../assets/textilee-assets/contact-header.jpg") center;
+  background-size: cover;
+  height: 70vh;
+}
+
+.headerContact h1 {
+  padding-top: 80px;
+}
+
+.formInfo {
+  background: #CCEDFB;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 100px 40px;
+}
+
+.contactForm {
+  background: #194050;
+  width: 60%;
+  padding: 60px 60px;
+  margin-top: -250px;
+  -webkit-box-shadow: 18px 18px #0CADC0;
+          box-shadow: 18px 18px #0CADC0;
+}
+
+.info {
+  width: 20%;
+  margin-top: 5%;
+}
+
+.contactForm input:first-of-type {
+  margin-right: 10%;
+}
+
+.contactForm input:nth-of-type(3) {
+  width: 100%;
+  border: 2px solid #0CADC0;
+  border-radius: 1%;
+  padding-bottom: 200px;
+}
+
+.contactInput {
+  color: #ffffff;
+  background: #194050;
+  width: calc(45% - 3px);
+  border-top: 1px solid #194050;
+  border-right: 1px solid #194050;
+  border-left: 1px solid #194050;
+  border-bottom: 2px solid #0CADC0;
+  padding: 30px 10px 20px 30px;
+  margin-bottom: 60px;
+}
+
+.contactForm button {
+  width: 100%;
+  background: #CCEDFB;
+  color: #1A315C;
+}
+
+.symbols {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.symbols i {
+  margin-right: 35px;
+}
+
+.info p:first-of-type {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 750px) {
+  .formInfo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .info {
+    width: 100%;
+    margin-top: 10%;
+    text-align: center;
+  }
+
+  .symbols {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: 25px;
+  }
+
+  .contactForm {
+    width: 100%;
+  }
+
+  .contactInput {
+    font-size: 14px;
+  }
+}
+@media (max-width: 450px) {
+  .headerContact h1 {
+    width: 60%;
   }
 }
 html, body {

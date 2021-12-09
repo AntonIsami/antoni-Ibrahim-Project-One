@@ -14,10 +14,10 @@ nav {
         li {
             list-style-type: none;
             a {
-                color: black;
+                color: $darkslateblue;
                 text-decoration: none;
                 text-transform: uppercase;
-                margin-right: 10px;
+                margin-right: 30px;
                 position: relative;
 
                 // add hover to a:focus, a:hover pseudo object after
