@@ -12,6 +12,7 @@
 $darkslateblue: #1A315C;
 $black: #1E1713;
 $turquoiseblue: #0CADC0;
+$lightskyblue: #CCEDFB;
 $blacktwo: #161515;
 $white: #ffffff;
 $thirdblue: rgb(25,64,80);
@@ -31,6 +32,7 @@ html {
 //common element styling
 header h1 {
     width: 50%;
+    color: $darkslateblue;
 }
 .wrapper {
     width: 80%;
@@ -38,7 +40,7 @@ header h1 {
     margin: 0 auto;
 }
 .header {
-    height: 95vh;
+    
     width: 100%;
     background-repeat: no-repeat;
     

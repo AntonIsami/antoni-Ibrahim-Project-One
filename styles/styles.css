@@ -207,6 +207,11 @@ template {
           box-sizing: border-box;
 }
 
+h1, h2, h3, h4, h5, h6, a, p {
+  padding: 0;
+  margin: 0;
+}
+
 .headerFlex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -288,6 +293,13 @@ h2 {
   font-weight: normal;
   letter-spacing: 2.7px;
   color: #1A315C;
+}
+
+h4 {
+  font-family: "Pacifico", cursive;
+  font-size: 40px;
+  letter-spacing: 4.3px;
+  color: black;
 }
 
 h3 {
@@ -372,6 +384,7 @@ p {
 .headerHome {
   background: url(../assets/textilee-assets/header-home.jpg) center;
   background-size: cover;
+  height: 95vh;
 }
 
 .threadsDiv {
@@ -481,7 +494,7 @@ p {
 }
 
 .activitiesFlex:nth-of-type(2) {
-  padding: 0px 0 80px 0;
+  padding: 0px 0 180px 0;
 }
 
 .activity {
@@ -759,6 +772,147 @@ p {
 .headerBlog {
   background: url(../assets/textilee-assets/blog-header.jpg) center;
   background-size: cover;
+  height: 70vh;
+}
+
+.headerBlog h1 {
+  padding-top: 55px;
+}
+
+.blogMain {
+  background: #CCEDFB;
+}
+
+.blogWrapper {
+  width: 50%;
+  margin: 0 10%;
+  max-width: 1400px;
+}
+
+.articleWrapper {
+  margin: 0 10%;
+  max-width: 1400px;
+  width: 85%;
+}
+
+.blogPost {
+  background: #194050;
+  width: 65%;
+  -webkit-box-shadow: 10px 10px #0CADC0;
+          box-shadow: 10px 10px #0CADC0;
+}
+
+.blogPost img {
+  width: 100%;
+  -webkit-box-shadow: 10px 20px #0CADC0;
+          box-shadow: 10px 20px #0CADC0;
+  margin-top: -100px;
+}
+
+.blogText {
+  padding: 50px 0px 60px 60px;
+}
+
+.blogText h3 {
+  text-align: left;
+}
+
+.blogText p {
+  color: white;
+  padding: 20px 0;
+}
+
+.blogText p:first-of-type {
+  color: #CCEDFB;
+}
+
+.topText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+aside {
+  width: 20%;
+  background: #194050;
+  height: 30%;
+  text-align: left;
+  margin-top: 10%;
+}
+
+.missionRecentPosts {
+  position: relative;
+}
+
+.missionText {
+  padding: 350px 15px 10px 15px;
+}
+
+.missionRecentPosts img {
+  width: 100%;
+  position: absolute;
+  right: 95%;
+  bottom: 95%;
+}
+
+.missionRecentPosts h3 {
+  text-align: left;
+}
+
+.missionRecentPosts p, li {
+  color: white;
+}
+
+.comments {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.comments h4 {
+  padding: 60px 0;
+}
+
+.commentAndPicture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 100px;
+}
+
+.commentAndPicture img {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding-right: 40px;
+}
+
+.commentForm input {
+  width: calc(45% - 3px);
+}
+
+.commentForm input:first-of-type {
+  margin-right: 10%;
+}
+
+.commentForm input:nth-of-type(3) {
+  width: 100%;
+}
+
+.date {
+  color: #194050;
+  padding-bottom: 15px;
+}
+
+.comments {
+  padding-bottom: 100px;
 }
 
 html {
@@ -767,6 +921,7 @@ html {
 
 header h1 {
   width: 50%;
+  color: #1A315C;
 }
 
 .wrapper {
@@ -776,7 +931,6 @@ header h1 {
 }
 
 .header {
-  height: 95vh;
   width: 100%;
   background-repeat: no-repeat;
 }

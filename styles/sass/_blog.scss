@@ -1,4 +1,108 @@
 .headerBlog {
     background: url(../assets/textilee-assets/blog-header.jpg) center;
     background-size: cover;
+    height: 70vh;
+}
+.headerBlog h1 {
+    padding-top: 55px;
+}
+.blogMain {
+    background: $lightskyblue;
+   
+}
+.blogWrapper {
+    width: 50%;
+    margin: 0 10%;
+    max-width: 1400px;
+}
+.articleWrapper {
+    margin: 0 10%;
+    max-width: 1400px;
+    width: 85%;
+}
+
+.blogPost {
+    background: $thirdblue;
+    width: 65%;
+    box-shadow: 10px 10px $turquoiseblue;
+}
+.blogPost img {   
+    width: 100%;
+    box-shadow: 10px 20px $turquoiseblue;
+    margin-top: -100px;
+}
+.blogText {
+    padding: 50px 0px 60px 60px;
+}
+.blogText h3 {
+    text-align: left;
+}
+.blogText p {
+    color: white;
+    padding: 20px 0;
+}
+.blogText p:first-of-type {
+    color: $lightskyblue;
+}
+
+.topText {
+    display: flex;
+    justify-content: space-between;
+
+}
+aside {
+    width: 20%;
+    background: $thirdblue;
+    height: 30%;
+    text-align: left;
+    margin-top: 10%;
+}
+.missionRecentPosts {
+    position: relative;
+}
+.missionText {
+    padding: 350px 15px 10px 15px;
+}
+.missionRecentPosts img {
+    width: 100%;
+    position: absolute;
+    right: 95%;
+    bottom: 95%;
+}
+.missionRecentPosts h3 {
+text-align: left;
+}
+.missionRecentPosts p, li {
+    color: white;
+}
+.comments {
+    display: flex;
+    flex-direction: column;
+}
+.comments h4 {
+    padding: 60px 0;
+}
+.commentAndPicture {
+    display: flex;
+    padding-bottom: 100px
+}
+.commentAndPicture img {
+    height: fit-content;
+    padding-right: 40px;
+}
+.commentForm input {
+    width: calc(45% - 3px);
+}
+.commentForm input:first-of-type {
+    margin-right: 10%;
+}
+.commentForm input:nth-of-type(3) {
+    width: 100%;
+}
+.date {
+    color: $thirdblue;
+    padding-bottom: 15px;
+}
+.comments {
+    padding-bottom: 100px;
 }
