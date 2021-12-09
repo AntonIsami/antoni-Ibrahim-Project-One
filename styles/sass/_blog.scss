@@ -4,7 +4,7 @@
     height: 70vh;
 }
 .headerBlog h1 {
-    padding-top: 55px;
+    padding-top: 80px;
 }
 .blogMain {
     background: $lightskyblue;
@@ -61,13 +61,14 @@ aside {
     position: relative;
 }
 .missionText {
-    padding: 350px 15px 10px 15px;
+    padding: 325px 15px 10px 15px;
 }
 .missionRecentPosts img {
-    width: 100%;
+    width: 95%;
     position: absolute;
-    right: 95%;
-    bottom: 95%;
+    left: 5%;
+    top: -2%;
+    
 }
 .missionRecentPosts h3 {
 text-align: left;
@@ -86,18 +87,32 @@ text-align: left;
     display: flex;
     padding-bottom: 100px
 }
+.commentAndPicture:nth-of-type(2){
+    padding-bottom: 25px;
+}
 .commentAndPicture img {
     height: fit-content;
     padding-right: 40px;
 }
 .commentForm input {
     width: calc(45% - 3px);
+    background: $lightskyblue;
+    border-top: 1px solid $lightskyblue;
+    border-right: 1px solid $lightskyblue;
+    border-left: 1px solid $lightskyblue;
+    border-bottom: 2px solid $turquoiseblue;
+    padding: 20px 10px 10px 30px;
 }
 .commentForm input:first-of-type {
     margin-right: 10%;
+    margin-bottom: 20px;
 }
 .commentForm input:nth-of-type(3) {
     width: 100%;
+    border: 2px solid $turquoiseblue;
+    border-radius: 1%;
+    padding-bottom: 100px;
+    margin-bottom: 20px;
 }
 .date {
     color: $thirdblue;
@@ -105,4 +120,80 @@ text-align: left;
 }
 .comments {
     padding-bottom: 100px;
+}
+.commentForm {
+    background: $lightskyblue;
+}
+.commentButton {
+    width: 100%;
+}
+@media  (max-width: 1000px) {
+    aside {
+        width: 30%;
+    }
+}
+@media (max-width: 750px) {
+    aside {
+        width: 100%;
+        text-align: center;
+        margin-top: 2%;
+    }
+    .topText {
+        flex-direction: column-reverse;
+    }
+    .missionRecentPosts {
+       
+    }
+    .missionRecentPosts img {
+        width: 40%;
+        left: 30%;
+        top: 2%;
+    }
+    .missionRecentPosts h3 {
+        text-align: center;
+    }
+    .missionText {
+        padding: 340px 15px 10px 15px;
+    }
+    .blogPost img {
+        margin-top: 0px;
+    }
+    .blogPost {
+        width: 100%;
+    }
+    .blogText {
+        padding: 30px 0px 40px 0px;
+    }
+    .blogWrapper {
+        width: 80%;
+    }
+}
+@media (max-width: 450px) {
+    .headerBlog {
+        height: 85vh;
+    }
+    .blogPost {
+        box-shadow: none;
+    }
+    .blogPost img {
+        box-shadow: none;
+    }
+    .missionText {
+        padding: 225px 15px 10px 15px;
+    }
+    .commentAndPicture {
+        padding-bottom: 50px;
+        flex-direction: column;
+    }
+    .commentAndPicture img {
+        margin-left: 80px;
+        width: 50%;
+        padding-bottom: 30px;
+    }
+    .comments h4 {
+        text-align: center;
+    }
+    .commentForm input {
+        font-size: 14px;
+    }
 }

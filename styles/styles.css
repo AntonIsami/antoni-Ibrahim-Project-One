@@ -222,7 +222,7 @@ h1, h2, h3, h4, h5, h6, a, p {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
-  padding-top: 10px;
+  padding-top: 25px;
 }
 
 nav {
@@ -245,10 +245,17 @@ nav ul li a {
   text-decoration: none;
   text-transform: uppercase;
   margin-right: 10px;
+  position: relative;
 }
-nav ul li a:hover, nav ul li a:focus {
-  -webkit-text-decoration: underline solid lightblue;
-          text-decoration: underline solid lightblue;
+nav ul li a:hover:after, nav ul li a:focus:after {
+  content: "";
+  background: #0CADC0;
+  height: 3px;
+  width: 70%;
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 15%;
 }
 
 .fa-bars {
@@ -342,7 +349,7 @@ nav {
   letter-spacing: 1.4px;
 }
 
-p {
+p, .missionText ul {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-size: 20px;
@@ -359,7 +366,7 @@ p {
     font-size: 28px;
   }
 
-  p {
+  p, .missionText ul {
     font-size: 16px;
   }
 
@@ -776,7 +783,7 @@ p {
 }
 
 .headerBlog h1 {
-  padding-top: 55px;
+  padding-top: 80px;
 }
 
 .blogMain {
@@ -848,14 +855,14 @@ aside {
 }
 
 .missionText {
-  padding: 350px 15px 10px 15px;
+  padding: 325px 15px 10px 15px;
 }
 
 .missionRecentPosts img {
-  width: 100%;
+  width: 95%;
   position: absolute;
-  right: 95%;
-  bottom: 95%;
+  left: 5%;
+  top: -2%;
 }
 
 .missionRecentPosts h3 {
@@ -887,6 +894,10 @@ aside {
   padding-bottom: 100px;
 }
 
+.commentAndPicture:nth-of-type(2) {
+  padding-bottom: 25px;
+}
+
 .commentAndPicture img {
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -896,14 +907,25 @@ aside {
 
 .commentForm input {
   width: calc(45% - 3px);
+  background: #CCEDFB;
+  border-top: 1px solid #CCEDFB;
+  border-right: 1px solid #CCEDFB;
+  border-left: 1px solid #CCEDFB;
+  border-bottom: 2px solid #0CADC0;
+  padding: 20px 10px 10px 30px;
 }
 
 .commentForm input:first-of-type {
   margin-right: 10%;
+  margin-bottom: 20px;
 }
 
 .commentForm input:nth-of-type(3) {
   width: 100%;
+  border: 2px solid #0CADC0;
+  border-radius: 1%;
+  padding-bottom: 100px;
+  margin-bottom: 20px;
 }
 
 .date {
@@ -913,6 +935,108 @@ aside {
 
 .comments {
   padding-bottom: 100px;
+}
+
+.commentForm {
+  background: #CCEDFB;
+}
+
+.commentButton {
+  width: 100%;
+}
+
+@media (max-width: 1000px) {
+  aside {
+    width: 30%;
+  }
+}
+@media (max-width: 750px) {
+  aside {
+    width: 100%;
+    text-align: center;
+    margin-top: 2%;
+  }
+
+  .topText {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+
+  .missionRecentPosts img {
+    width: 40%;
+    left: 30%;
+    top: 2%;
+  }
+
+  .missionRecentPosts h3 {
+    text-align: center;
+  }
+
+  .missionText {
+    padding: 340px 15px 10px 15px;
+  }
+
+  .blogPost img {
+    margin-top: 0px;
+  }
+
+  .blogPost {
+    width: 100%;
+  }
+
+  .blogText {
+    padding: 30px 0px 40px 0px;
+  }
+
+  .blogWrapper {
+    width: 80%;
+  }
+}
+@media (max-width: 450px) {
+  .headerBlog {
+    height: 85vh;
+  }
+
+  .blogPost {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+
+  .blogPost img {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+
+  .missionText {
+    padding: 225px 15px 10px 15px;
+  }
+
+  .commentAndPicture {
+    padding-bottom: 50px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .commentAndPicture img {
+    margin-left: 80px;
+    width: 50%;
+    padding-bottom: 30px;
+  }
+
+  .comments h4 {
+    text-align: center;
+  }
+
+  .commentForm input {
+    font-size: 14px;
+  }
+}
+html, body {
+  overflow-x: hidden;
 }
 
 html {

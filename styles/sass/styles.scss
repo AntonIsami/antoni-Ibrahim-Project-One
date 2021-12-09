@@ -25,6 +25,9 @@ $thirdblue: rgb(25,64,80);
 @import "home";
 @import "blog";
 
+html, body {
+    overflow-x: hidden;
+}
 html {
     font-size: 125%;
 }

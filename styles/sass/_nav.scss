@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    padding-top: 10px;
+    padding-top: 25px;
 }
 
 nav {
@@ -18,11 +18,19 @@ nav {
                 text-decoration: none;
                 text-transform: uppercase;
                 margin-right: 10px;
+                position: relative;
 
                 // add hover to a:focus, a:hover pseudo object after
-                &:hover,
-                &:focus {
-                    text-decoration: underline solid lightblue;
+                &:hover:after,
+                &:focus:after {
+                   content: "";
+                    background: #0CADC0;
+                    height: 3px;
+                    width: 70%;
+                    display: block;
+                    position: absolute;
+                    top: 100%;
+                    left: 15%;
                 }
             }
 

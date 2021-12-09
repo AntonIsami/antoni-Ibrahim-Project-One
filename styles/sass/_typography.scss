@@ -86,7 +86,7 @@ nav {
 
 // body 
 // Lato regular 20px, line height 28px, letter spacing 2px
-p {
+p, .missionText ul {
     font-family: 'Lato', sans-serif;
     font-weight: 400;
     font-size: 20px;
@@ -100,7 +100,7 @@ p {
     h2 {
         font-size: 28px;
     }
-    p {
+    p, .missionText ul {
         font-size: 16px;
     }
     button {
