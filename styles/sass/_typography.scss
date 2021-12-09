@@ -1,25 +1,29 @@
+@import 'https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Pacifico&display=swap';
+$primaryfont: 'Pacifico', cursive;
+$secondaryfont: 'Lato', sans-serif;
+
 //Header Heading (Get in.., Blog)
 // Pacifico regular 68px, Line Height 64px
 
 //Heading (Textiles for all..)
 // Pacifico regular 58px, Line height 68px
 h1 {
-    font-family: 'Pacifico', cursive;
+    font-family: $primaryfont;
     font-size: 58px;
     line-height: 68px;
     font-weight: normal;
-    color: #1A315C;
+    color: $darkslateblue;
 }
 // Headings (Learn new.., Upcoming.., Communi.., Blog..)
 // Pacifico regular 43px, line height 58px, line spacing 2.7px
 
 h2 {
-    font-family: 'Pacifico', cursive;
+    font-family: $primaryfont;
     font-size: 43px;
     line-height: 58px;
     font-weight: normal;
     letter-spacing: 2.7px;
-    color: #1A315C; 
+    color: $darkslateblue; 
     
     
 }
@@ -27,16 +31,16 @@ h2 {
 // PAcifico regular 40px, letter spacing 4.3px
 
 h4 {
-    font-family: 'Pacifico', cursive;
+    font-family: $primaryfont;
     font-size: 40px;
     letter-spacing: 4.3px;
-    color: black;
+    color: $blacktwo;
 }
 // Headings (Discover.., New locat..)
 // Pacifico regular 40px, align right, line height 58px, letter spacing 2.5px
 
 h3 {
-    font-family: 'Pacifico', cursive;
+    font-family: $primaryfont;
     font-size: 40px;
     font-weight: normal;
     text-align: right;
@@ -51,7 +55,7 @@ h3 {
 // Pacifico regular 30px, line height 24px, letter spacing 1.7px
 
 .logo {
-    font-family: 'Pacifico', cursive;
+    font-family: $primaryfont;
     font-size: 30px;
     font-weight: normal;
     line-height: 24px;
@@ -60,14 +64,14 @@ h3 {
 // buttons 
 // Pacifico regular 27px, center align, line height 32px, letter spacing 1.4px
 button {
-    font-family: 'Pacifico', cursive;
+    font-family: $primaryfont;
     font-size: 27px;
     font-weight: normal;
     line-height: 32px;
     letter-spacing: 1.4px;
     text-align: center;
-    background-color: #1A315C;
-    color: white;
+    background-color: $darkslateblue;
+    color: $white;
     border: none;
     padding: 6px 35px 10px 35px;
     text-align: center;

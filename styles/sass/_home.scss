@@ -14,7 +14,7 @@
 }
 
 .learnSection {
-    background: #CCEDFB;
+    background: $lightskyblue;
 }
 .learnFlex {
     display: flex;
@@ -29,11 +29,11 @@
 .learnText h2 {
     margin-bottom: 10px;
     margin-top: 70px;
-    color: #1A315C;
+    color: $darkslateblue;
 }
 .learnText p {
     padding-bottom: 20px;
-    color: black;
+    color: $blacktwo;
 }
 
 .learnImgDiv {
@@ -44,7 +44,7 @@
 }
 .learnImgDiv::before {
     content: '';
-    background: #0CADC0;
+    background: $turquoiseblue;
     height: 100%;
     width: 100%;
     display: block;
@@ -70,7 +70,7 @@
 }
 // Second section (gallery)
 .gallerySection {
-    background: rgb(25,64,80);
+    background:  $thirdblue;
 }
 .galleryFlex {
     display: flex;
@@ -90,7 +90,7 @@
 }
 // third section company activities
 .activitiesSection {
-    background: #CCEDFB;
+    background: $lightskyblue;
 }
 .activitiesFlex {
     display: flex;
@@ -116,7 +116,7 @@
 }
 .activity i {
     font-size: 30px;
-    background: #0CADC0;
+    background: $thirdblue;
     border-radius: 50%;
     min-width: 55px;
     height: 55px;
@@ -127,14 +127,14 @@
 }
 .activity h2 {
    margin-top: 0px; 
-     
+   margin-bottom: 15px;
 }
 // fourth section new locations and market
 .locationsSection {
-    background: rgb(25,64,80);
+    background: $thirdblue;
 }
 .locationsSection p, h3 {
-    color: white;
+    color: $white;
     
 }
 .locationsFlexTop {
@@ -157,25 +157,15 @@
     bottom: 2%;
     right: 58%;
     width: 55%;
-    box-shadow: 20px 20px #0CADC0;
+    box-shadow: 20px 20px $turquoiseblue;
 }
 .locationImgRight {
     top: 10%;
     left: 60%;
     width: 53%;
-    box-shadow: -20px 20px #0CADC0;
+    box-shadow: -20px 20px $turquoiseblue;
 }
 
-// .locationImgLeft::before {
-//     content: '';
-//     background: #0CADC0;
-//     height: 100%;
-//     width: 100%;
-//     display: block;
-//     position: absolute;
-//     left: 5%;
-//     top: 5%;
-// }
 .marketText h2 {
     margin-bottom: 10px;
 }
@@ -186,8 +176,8 @@
     margin-top: 0px;
 }
 .marketText button {
-    color: #1A315C; 
-    background: #CCEDFB;
+    color: $darkslateblue; 
+    background: $lightskyblue;
 }
 .marketTextRight {
     position: relative;
@@ -215,13 +205,13 @@
 // fourth section style search 
 .styleSearch {
     padding: 125px 0;
-    background: #CCEDFB;
+    background: $lightskyblue;
 }
 .styleText {
     text-align: center;
 }
 .styleText p {
-    color: black;
+    color: $blacktwo;
     margin-top: 15px;
 }
 .styleText h2 {

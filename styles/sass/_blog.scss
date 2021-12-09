@@ -39,7 +39,7 @@
 }
 
 .blogText p {
-    color: white;
+    color: $white;
     padding: 20px 0;
 }
 .blogText p:first-of-type {
@@ -76,7 +76,7 @@ aside {
 text-align: left;
 }
 .missionRecentPosts p, li {
-    color: white;
+    color: $white;
 }
 .comments {
     display: flex;
