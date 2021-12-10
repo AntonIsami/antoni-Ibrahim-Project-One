@@ -730,7 +730,7 @@ p, .missionText ul {
     text-align: center;
   }
 
-  .learnText h2 {
+  .learnText h3 {
     margin-top: 20px;
   }
 
@@ -783,7 +783,8 @@ p, .missionText ul {
     left: 0;
   }
 
-  .marketTextRight h3 {
+  .marketText h5,
+.marketTextRight h5 {
     text-align: center;
   }
 
@@ -796,7 +797,7 @@ p, .missionText ul {
     padding: 25px 0;
   }
 
-  .styleText h2 {
+  .styleText h3 {
     margin-top: 0;
   }
 }

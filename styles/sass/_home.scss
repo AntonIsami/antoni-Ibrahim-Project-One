@@ -242,7 +242,7 @@
         width: 100%;
         text-align: center;
     }
-    .learnText h2 {
+    .learnText h3 {
         margin-top: 20px;
     }
     .activity {
@@ -278,7 +278,8 @@
     .marketTextRight {
         left: 0;
     }
-    .marketTextRight h3 {
+    .marketText h5,
+    .marketTextRight h5 {
     text-align: center;
     }
     .marketTextLeft {
@@ -288,7 +289,7 @@
     .styleSearch {
         padding: 25px 0;
     }
-    .styleText h2 {
+    .styleText h3 {
         margin-top: 0;
     }
 }
