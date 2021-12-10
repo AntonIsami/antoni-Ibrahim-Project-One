@@ -57,6 +57,11 @@ nav {
         align-items: center;
     }
 }
+@media (max-width: 750px) {
+    nav ul li a {
+        margin-right: 0;
+    }
+}
 @media (max-width: 450px) {
      nav ul {
         visibility: hidden;
