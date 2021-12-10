@@ -287,6 +287,17 @@ nav ul li a:hover:after, nav ul li a:focus:after {
   left: 15%;
 }
 
+.activePage:after {
+  content: "";
+  background: #0CADC0;
+  height: 3px;
+  width: 70%;
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 15%;
+}
+
 .fa-bars {
   visibility: hidden;
   color: #161515;
