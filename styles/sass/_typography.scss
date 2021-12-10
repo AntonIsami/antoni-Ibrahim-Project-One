@@ -5,9 +5,16 @@ $secondaryfont: 'Lato', sans-serif;
 //Header Heading (Get in.., Blog)
 // Pacifico regular 68px, Line Height 64px
 
+h1 {
+    font-family: $primaryfont;
+    font-size: 68px;
+    line-height: 64px;
+    color: $darkslateblue;
+}
+
 //Heading (Textiles for all..)
 // Pacifico regular 58px, Line height 68px
-h1 {
+h2 {
     font-family: $primaryfont;
     font-size: 58px;
     line-height: 68px;
@@ -17,18 +24,16 @@ h1 {
 // Headings (Learn new.., Upcoming.., Communi.., Blog..)
 // Pacifico regular 43px, line height 58px, line spacing 2.7px
 
-h2 {
+h3 {
     font-family: $primaryfont;
     font-size: 43px;
     line-height: 58px;
     font-weight: normal;
     letter-spacing: 2.7px;
     color: $darkslateblue; 
-    
-    
 }
 // Headings (Comments)
-// PAcifico regular 40px, letter spacing 4.3px
+// Pacifico regular 40px, letter spacing 4.3px
 
 h4 {
     font-family: $primaryfont;
@@ -39,7 +44,7 @@ h4 {
 // Headings (Discover.., New locat..)
 // Pacifico regular 40px, align right, line height 58px, letter spacing 2.5px
 
-h3 {
+h5 {
     font-family: $primaryfont;
     font-size: 40px;
     font-weight: normal;
@@ -50,7 +55,12 @@ h3 {
 
 // Headings (Our missions, Recent Pos..)
 // Pacifico regular 35px, letter spacing 2.9px
-
+h6 {
+    font-family: $primaryfont;
+    font-size: 35px;
+    letter-spacing: 2.9px;
+    color: $white;
+}
 // Logo 
 // Pacifico regular 30px, line height 24px, letter spacing 1.7px
 

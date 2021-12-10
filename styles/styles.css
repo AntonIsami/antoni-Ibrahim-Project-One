@@ -316,13 +316,20 @@ nav ul li a:hover:after, nav ul li a:focus:after {
 }
 h1 {
   font-family: "Pacifico", cursive;
+  font-size: 68px;
+  line-height: 64px;
+  color: #1A315C;
+}
+
+h2 {
+  font-family: "Pacifico", cursive;
   font-size: 58px;
   line-height: 68px;
   font-weight: normal;
   color: #1A315C;
 }
 
-h2 {
+h3 {
   font-family: "Pacifico", cursive;
   font-size: 43px;
   line-height: 58px;
@@ -338,13 +345,20 @@ h4 {
   color: #161515;
 }
 
-h3 {
+h5 {
   font-family: "Pacifico", cursive;
   font-size: 40px;
   font-weight: normal;
   text-align: right;
   line-height: 58px;
   letter-spacing: 2.5px;
+}
+
+h6 {
+  font-family: "Pacifico", cursive;
+  font-size: 35px;
+  letter-spacing: 2.9px;
+  color: #ffffff;
 }
 
 .logo {
@@ -455,7 +469,7 @@ p, .missionText ul {
   width: 65%;
 }
 
-.learnText h2 {
+.learnText h3 {
   margin-bottom: 10px;
   margin-top: 70px;
   color: #1A315C;
@@ -551,7 +565,7 @@ p, .missionText ul {
 
 .activity i {
   font-size: 30px;
-  background: #194050;
+  background: #0CADC0;
   border-radius: 50%;
   min-width: 55px;
   height: 55px;
@@ -561,9 +575,10 @@ p, .missionText ul {
   margin-top: 5px;
 }
 
-.activity h2 {
+.activity h3 {
   margin-top: 0px;
   margin-bottom: 15px;
+  color: #1A315C;
 }
 
 .locationsSection {
@@ -612,12 +627,10 @@ p, .missionText ul {
           box-shadow: -20px 20px #0CADC0;
 }
 
-.marketText h2 {
+.marketText h5 {
   margin-bottom: 10px;
-}
-
-.marketText h3 {
   margin: 10px 0;
+  color: white;
 }
 
 .marketText p {
@@ -635,7 +648,7 @@ p, .missionText ul {
   left: 60%;
 }
 
-.marketTextRight h3 {
+.marketTextRight h5 {
   text-align: left;
 }
 
@@ -669,8 +682,9 @@ p, .missionText ul {
   margin-top: 15px;
 }
 
-.styleText h2 {
+.styleText h3 {
   margin-bottom: 0px;
+  color: #1A315C;
 }
 
 @media (max-width: 1000px) {
@@ -792,6 +806,10 @@ p, .missionText ul {
     display: none;
   }
 
+  .header h2 {
+    padding-top: 50px;
+  }
+
   .headerHome {
     background-size: cover;
     background-position-x: -750px;
@@ -902,6 +920,8 @@ aside {
 
 .missionRecentPosts p, li {
   color: #ffffff;
+  padding-left: 10px;
+  padding-bottom: 10px;
 }
 
 .comments {
@@ -1175,7 +1195,21 @@ aside {
 }
 @media (max-width: 450px) {
   .headerContact h1 {
-    width: 60%;
+    width: 100%;
+    padding-top: 125px;
+  }
+
+  .contactForm {
+    padding: 20px 20px;
+  }
+
+  .contactInput {
+    padding: 10px 5px 5px 5px;
+    margin-bottom: 20px;
+  }
+
+  .contactInput:nth-of-type(3) {
+    padding: 10px 5px 150px 5px;
   }
 }
 html, body {
@@ -1186,8 +1220,8 @@ html {
   font-size: 125%;
 }
 
-header h1 {
-  width: 50%;
+header h2 {
+  width: 62%;
   color: #1A315C;
 }
 
