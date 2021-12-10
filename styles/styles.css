@@ -1292,6 +1292,10 @@ header h2 {
   background-repeat: no-repeat;
 }
 
+fieldset {
+  border: none;
+}
+
 footer {
   background: #1E1713;
   color: #ffffff;

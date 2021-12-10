@@ -38,15 +38,17 @@
                 <div class="articleWrapper">
                 
                     <div class="blogText">
-                        <h3>Our new collection</h3>
-                        <p class="blogTextDate">
-                            Monday, October 5th, 2019 by Saron
-                        </p>
-                        <p class="blogTextp"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate sequi sunt doloribus vitae fuga rem aperiam fugiat dolor corporis, temporibus ad voluptatibus vel exercitationem reprehenderit non accusantium odit, maiores qui.
-                        </p>
-                        <p class="blogTextp">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore voluptatibus, aut eius aspernatur error nam suscipit, quas id aliquid veniam exercitationem iusto facere, qui porro possimus pariatur alias ab laboriosam.</p>
-                        <p class="blogTextp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos omnis explicabo deserunt voluptatum est dolores in unde debitis repellat. Dolorem necessitatibus tenetur assumenda sequi cum qui laudantium quidem dignissimos! Veniam dolores inventore obcaecati nam ullam? Iusto aperiam autem voluptas, odio quasi veritatis rem aut rerum ad accusantium, doloribus natus asperiores?</p>
-                        <p class="blogTextp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, repellat? Eveniet maxime ab fugit repellat.</p>
+                        <article>
+                            <h3>Our new collection</h3>
+                            <p class="blogTextDate">
+                                Monday, October 5th, 2019 by Saron
+                            </p>
+                            <p class="blogTextp"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate sequi sunt doloribus vitae fuga rem aperiam fugiat dolor corporis, temporibus ad voluptatibus vel exercitationem reprehenderit non accusantium odit, maiores qui.
+                            </p>
+                            <p class="blogTextp">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore voluptatibus, aut eius aspernatur error nam suscipit, quas id aliquid veniam exercitationem iusto facere, qui porro possimus pariatur alias ab laboriosam.</p>
+                            <p class="blogTextp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos omnis explicabo deserunt voluptatum est dolores in unde debitis repellat. Dolorem necessitatibus tenetur assumenda sequi cum qui laudantium quidem dignissimos! Veniam dolores inventore obcaecati nam ullam? Iusto aperiam autem voluptas, odio quasi veritatis rem aut rerum ad accusantium, doloribus natus asperiores?</p>
+                            <p class="blogTextp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, repellat? Eveniet maxime ab fugit repellat.</p>
+                        </article>
                     </div>    
                 </div>
             </div>
@@ -93,13 +95,16 @@
             </div>
             <div class="commentForm">
                 <form>
-                    <label for="name" class="visuallyhidden">Name:</label>
-                    <input type="text" placeholder="Name">
-                    <label for="email address" class="visuallyhidden">Email Address:</label>
-                    <input type="text"placeholder="Email address">
-                    <label for="Comment" class="visuallyhidden">Comment:</label>
-                    <input type="text" placeholder="Comment">
-                    <button class="commentButton">post comment</button>
+                    <fieldset>
+                        <legend class="sr-only">Post a comment:</legend>
+                        <label for="name" class="visuallyhidden">Name:</label>
+                        <input type="text" placeholder="Name" autocomplete="name" required>
+                        <label for="email address" class="visuallyhidden">Email Address:</label>
+                        <input type="text"placeholder="Email address" autocomplete="email">
+                        <label for="Comment" class="visuallyhidden">Comment:</label>
+                        <input type="text" placeholder="Comment">
+                        <button class="commentButton">post comment</button>
+                    </fieldset>
                 </form>
             </div>
         </div>

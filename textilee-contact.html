@@ -34,13 +34,16 @@
         <div class="formInfo">
             <div class="contactForm">
                 <form>
-                    <label for="name" class="visuallyhidden">Name:</label>
-                    <input type="text" placeholder="Name" class="contactInput">
-                    <label for="email address" class="visuallyhidden">Email Address:</label>
-                    <input type="text" placeholder="Email address" class="contactInput">
-                    <label for="message" class="visuallyhidden">Message:</label>
-                    <input type="text" placeholder="Message" class="contactInput">
-                    <button>submit</button>
+                    <fieldset>
+                        <legend class="sr-only">Send a contact message:</legend>
+                        <label for="name" class="visuallyhidden">Name:</label>
+                        <input type="text" placeholder="Name" class="contactInput" autocomplete="name" required>
+                        <label for="email address" class="visuallyhidden">Email Address:</label>
+                        <input type="text" placeholder="Email address" class="contactInput" autocomplete="email"> 
+                        <label for="message" class="visuallyhidden">Message:</label>
+                        <input type="text" placeholder="Message" class="contactInput">
+                        <button>submit</button>
+                    </fieldset>
                 </form>
             </div>
             <div class="info">
