@@ -311,6 +311,14 @@
        background-size: cover;
        background-position-x: -750px;
    }
+   .learnText h3 {
+       margin-top: 30px;
+   }
+   .learnImg {
+       width: 100%;
+       margin-top: 40px;
+       margin-left: 0;
+   }
    .galleryImg {
        padding-right: 10px;
        width: 50%;
@@ -318,5 +326,17 @@
    .galleryImg:last-of-type {
        display: none;
    }
+   .activity {
+        margin-top: 40px;
+    }
+    .activityText {
+        margin-left: 0px;
+    }
+    .activitiesFlex:nth-of-type(2) {
+        padding: 0 0 80px 0;
+    }
+    .marketText button, .styleText button {
+        margin: 20px 0;
+    }
 
 }

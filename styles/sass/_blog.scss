@@ -137,10 +137,17 @@ text-align: left;
     }
 }
 @media (max-width: 750px) {
+    h1 {
+        margin-top: 10%;
+    }
+    h6 {
+        font-size: 25px;
+
+    }
     aside {
         width: 100%;
         text-align: center;
-        margin-top: 2%;
+        margin-top: 0;
     }
     .topText {
         flex-direction: column-reverse;
@@ -173,6 +180,10 @@ text-align: left;
     }
 }
 @media (max-width: 450px) {
+    h1 {
+        margin-top: 40%;
+        text-align: center;
+    }
     .headerBlog {
         height: 85vh;
     }
@@ -200,4 +211,5 @@ text-align: left;
     .commentForm input {
         font-size: 14px;
     }
+    
 }
