@@ -302,6 +302,9 @@ nav ul li a:hover:after, nav ul li a:focus:after {
   visibility: hidden;
   color: #161515;
 }
+.fa-bars:hover {
+  color: darkred;
+}
 
 @media (max-width: 1000px) {
   .headerFlex {

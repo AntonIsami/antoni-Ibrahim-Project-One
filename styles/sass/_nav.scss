@@ -51,6 +51,10 @@ nav {
 .fa-bars{
     visibility: hidden;
     color: $blacktwo;
+
+    &:hover {
+        color: darkred;
+    }
 }
 @media (max-width: 1000px) {
     .headerFlex {
