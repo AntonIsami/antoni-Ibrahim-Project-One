@@ -298,6 +298,36 @@ nav ul li a:hover:after, nav ul li a:focus:after {
   left: 15%;
 }
 
+.javanav {
+  display: block;
+  font-size: 20px;
+  position: absolute;
+  left: 0;
+  top: 70px;
+  background: #0CADC0;
+  width: 100%;
+  padding-left: 0px;
+}
+
+.javanav li {
+  border-bottom: solid 2px black;
+  border-top: solid 2px black;
+  padding: 20px 0;
+}
+
+.ipositionchanges {
+  position: absolute;
+  right: 25px;
+  top: 25px;
+}
+
+.fa-times {
+  font-size: 20px;
+}
+.fa-times:hover {
+  color: darkred;
+}
+
 .fa-bars {
   visibility: hidden;
   color: #161515;
@@ -320,7 +350,7 @@ nav ul li a:hover:after, nav ul li a:focus:after {
 }
 @media (max-width: 450px) {
   nav ul {
-    visibility: hidden;
+    display: none;
   }
 
   .fa-bars {

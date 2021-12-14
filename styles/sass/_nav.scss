@@ -48,6 +48,33 @@ nav {
     top: 100%;
     left: 15%;
 }
+.javanav {
+    display: block;
+    font-size: 20px;
+    position: absolute;
+    left: 0;
+    top: 70px;
+    background: $turquoiseblue;
+    width: 100%;
+    padding-left: 0px;
+}
+.javanav li {
+    border-bottom: solid 2px black;
+    border-top: solid 2px black;
+    padding: 20px 0;
+}
+.ipositionchanges {
+    position: absolute;
+    right: 25px;
+    top: 25px;
+}
+.fa-times {
+    font-size: 20px;
+
+    &:hover {
+        color: darkred;
+    }
+}
 .fa-bars{
     visibility: hidden;
     color: $blacktwo;
@@ -68,7 +95,7 @@ nav {
 }
 @media (max-width: 450px) {
      nav ul {
-        visibility: hidden;
+        display: none;
     }
     .fa-bars {
         visibility: visible;
@@ -77,8 +104,6 @@ nav {
         right: 25px;
         font-size: 35px;
         transform: scale(1.7,1);
-        
-        
     }
     
 }
