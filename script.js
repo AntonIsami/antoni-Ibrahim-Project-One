@@ -42,6 +42,7 @@ textileeApp.printUserComments = function() {
         newComment.innerHTML= commentPost;
         
         const commentsElement = document.getElementsByClassName("comments");
+        console.log(commentsElement);
         commentPost.textContent = newComment;
         console.log(commentPost);
 
