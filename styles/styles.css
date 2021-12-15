@@ -298,36 +298,6 @@ nav ul li a:hover:after, nav ul li a:focus:after {
   left: 15%;
 }
 
-.javanav {
-  display: block;
-  font-size: 20px;
-  position: absolute;
-  left: 0;
-  top: 70px;
-  background: #0CADC0;
-  width: 100%;
-  padding-left: 0px;
-}
-
-.javanav li {
-  border-bottom: solid 2px black;
-  border-top: solid 2px black;
-  padding: 20px 0;
-}
-
-.ipositionchanges {
-  position: absolute;
-  right: 25px;
-  top: 25px;
-}
-
-.fa-times {
-  font-size: 20px;
-}
-.fa-times:hover {
-  color: darkred;
-}
-
 .fa-bars {
   visibility: hidden;
   color: #161515;
@@ -348,6 +318,10 @@ nav ul li a:hover:after, nav ul li a:focus:after {
     margin-right: 0;
   }
 }
+.fa-times {
+  visibility: hidden;
+}
+
 @media (max-width: 450px) {
   nav ul {
     display: none;
@@ -361,6 +335,37 @@ nav ul li a:hover:after, nav ul li a:focus:after {
     font-size: 35px;
     -webkit-transform: scale(1.7, 1);
             transform: scale(1.7, 1);
+  }
+
+  .javanav {
+    display: block;
+    font-size: 20px;
+    position: absolute;
+    left: 0;
+    top: 70px;
+    background: #0CADC0;
+    width: 100%;
+    padding-left: 0px;
+  }
+
+  .javanav li {
+    border-bottom: solid 2px black;
+    border-top: solid 2px black;
+    padding: 20px 0;
+  }
+
+  .ipositionchanges {
+    position: absolute;
+    right: 25px;
+    top: 25px;
+  }
+
+  .fa-times {
+    visibility: visible;
+    font-size: 20px;
+  }
+  .fa-times:hover {
+    color: darkred;
   }
 }
 h1 {
@@ -996,8 +1001,6 @@ aside {
 
 .missionRecentPosts p, li {
   color: #ffffff;
-  padding-left: 10px;
-  padding-bottom: 10px;
 }
 
 .comments {
@@ -1026,6 +1029,13 @@ aside {
 }
 
 .commentAndPicture img {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding-right: 40px;
+}
+
+.commentAndPicture i {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -1071,6 +1081,10 @@ aside {
 .commentButton {
   width: 100%;
 }
+.commentButton:hover {
+  background: #161515;
+  color: #CCEDFB;
+}
 
 @media (max-width: 1000px) {
   aside {
@@ -1083,7 +1097,8 @@ aside {
   }
 
   h6 {
-    font-size: 25px;
+    font-size: 38px;
+    padding: 22px 0px;
   }
 
   aside {
@@ -1099,10 +1114,19 @@ aside {
             flex-direction: column-reverse;
   }
 
+  .missionText ul {
+    padding-bottom: 25px;
+  }
+
+  .missionText ul, .missionText p {
+    width: 65%;
+    margin: 0 auto;
+  }
+
   .missionRecentPosts img {
     width: 40%;
     left: 30%;
-    top: 2%;
+    top: 5%;
   }
 
   .missionRecentPosts h3 {
@@ -1110,7 +1134,7 @@ aside {
   }
 
   .missionText {
-    padding: 340px 15px 10px 15px;
+    padding: 350px 15px 10px 15px;
   }
 
   .blogPost img {

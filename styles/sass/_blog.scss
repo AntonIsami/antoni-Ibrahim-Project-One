@@ -77,8 +77,8 @@ text-align: left;
 }
 .missionRecentPosts p, li {
     color: $white;
-    padding-left: 10px;
-    padding-bottom: 10px;
+    
+  
 }
 .comments {
     display: flex;
@@ -95,6 +95,10 @@ text-align: left;
     padding-bottom: 25px;
 }
 .commentAndPicture img {
+    height: fit-content;
+    padding-right: 40px;
+}
+.commentAndPicture i {
     height: fit-content;
     padding-right: 40px;
 }
@@ -130,6 +134,10 @@ text-align: left;
 }
 .commentButton {
     width: 100%;
+    &:hover {
+        background: $blacktwo;
+        color: $lightskyblue;
+    }
 }
 @media  (max-width: 1000px) {
     aside {
@@ -141,8 +149,8 @@ text-align: left;
         margin-top: 10%;
     }
     h6 {
-        font-size: 25px;
-
+        font-size: 38px;
+        padding: 22px 0px;
     }
     aside {
         width: 100%;
@@ -152,17 +160,23 @@ text-align: left;
     .topText {
         flex-direction: column-reverse;
     }
-    
+    .missionText ul {
+        padding-bottom: 25px;
+    }
+    .missionText ul, .missionText p {
+        width: 65%;
+        margin: 0 auto;
+    }
     .missionRecentPosts img {
         width: 40%;
         left: 30%;
-        top: 2%;
+        top: 5%;
     }
     .missionRecentPosts h3 {
         text-align: center;
     }
     .missionText {
-        padding: 340px 15px 10px 15px;
+        padding: 350px 15px 10px 15px;
     }
     .blogPost img {
         margin-top: 0px;
