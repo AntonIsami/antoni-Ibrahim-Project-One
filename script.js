@@ -26,12 +26,35 @@ textileeApp.printUserComments = function() {
         const userEmail = document.querySelector("input[type=email]").value;
         const userMessage = document.querySelector(".message").value;
         const d = new Date();
+
+        
+        //Going to create a function to add the proper suffix to the getDate
+        const suffixAdder = function(date) {
+            if (date >= 4 && date <= 20 || date >= 24 && date <= 30) {
+                return 'th';
+            } else if (date === 2 || date === 22 ) {
+                return 'nd';
+            } else if (date === 1 || date === 21 || date === 31 ) {
+                return 'st';
+            } else if (date === 3 || 23) {
+                return 'rd';
+            }
+        }
+        // All of this just to remove the timezone from the Date() date
+        const options = { weekday: 'long' };
+        const options1 = { month: 'long' }
+        const NoTimeDate = Intl.DateTimeFormat('en-US', options).format(d) + " " + Intl.DateTimeFormat('en-US', options1).format(d) + " " + d.getDate() + suffixAdder(d.getDate()) + ', ' +  d.getFullYear(); 
+        
+
+
+
         const commentPost = document.createElement('div');
+        
         commentPost.innerHTML = `
             <img><i class="fas fa-user-circle"></i></img>
             <div class="commentText">
                 <p class="date"> 
-                ${d} by ${userName}
+                ${NoTimeDate} by ${userName}
                 </p>
                 <p class="commentp">
                 ${userMessage}
