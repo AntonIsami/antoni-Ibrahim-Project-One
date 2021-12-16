@@ -1086,6 +1086,14 @@ aside {
   color: #CCEDFB;
 }
 
+.fa-user-circle {
+  font-size: 65px;
+}
+
+.newPost {
+  padding: 60px 0;
+}
+
 @media (max-width: 1000px) {
   aside {
     width: 30%;

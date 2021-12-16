@@ -15,37 +15,32 @@ textileeApp.attachEventListener = function(){
 
 }
 textileeApp.formElement = document.querySelector("form");
-
+textileeApp.commentsElement = document.querySelector(".comments");
 
 
 textileeApp.printUserComments = function() {
+    
     textileeApp.formElement.addEventListener('submit', function(event){
         event.preventDefault();
         const userName = document.querySelector(".name").value;
         const userEmail = document.querySelector("input[type=email]").value;
         const userMessage = document.querySelector(".message").value;
         const d = new Date();
-        const commentPost = `
+        const commentPost = document.createElement('div');
+        commentPost.innerHTML = `
             <img><i class="fas fa-user-circle"></i></img>
             <div class="commentText">
                 <p class="date"> 
-                "${d} by ${userName}"
+                ${d} by ${userName}
                 </p>
                 <p class="commentp">
-                "${userMessage}"
+                ${userMessage}
                 </p>
             </div>
         `
-        
-        const newComment = document.createElement('div')
-        newComment.className = "commentAndPicture";
-        newComment.innerHTML= commentPost;
-        
-        const commentsElement = document.getElementsByClassName("comments");
-        console.log(commentsElement);
-        commentPost.textContent = newComment;
-        console.log(commentPost);
-
+        commentPost.className = "commentAndPicture";
+        commentPost.classList.add("newPost");
+        textileeApp.commentsElement.insertBefore(commentPost, textileeApp.commentsElement.childNodes[6]);
     })
 }
 
