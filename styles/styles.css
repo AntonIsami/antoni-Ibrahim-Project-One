@@ -313,11 +313,6 @@ nav ul li a:hover:after, nav ul li a:focus:after {
             align-items: center;
   }
 }
-@media (max-width: 750px) {
-  nav ul li a {
-    margin-right: 0;
-  }
-}
 .fa-times {
   visibility: hidden;
 }
@@ -1039,7 +1034,7 @@ aside {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  padding-right: 40px;
+  padding-right: 25px;
 }
 
 .commentForm input {

@@ -51,7 +51,7 @@ textileeApp.printUserComments = function() {
         const commentPost = document.createElement('div');
         
         commentPost.innerHTML = `
-            <img><i class="fas fa-user-circle"></i></img>
+            <img><i class="fas fa-user-circle" aria-hidden"true"></i></img>
             <div class="commentText">
                 <p class="date"> 
                 ${NoTimeDate} by ${userName}
